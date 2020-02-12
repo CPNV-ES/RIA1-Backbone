@@ -84,6 +84,10 @@ RIA1-Backbone
 
 Folder `assets`
 - In this directory are all the `js` files required for the use of the `backbone`
+- On the following link you will find the js files in question
+  - [underscore.js](http://underscorejs.org/underscore.js)
+  - [backbone.js](https://backbonejs.org/backbone.js)
+  - [jquery.js](https://github.com/jashkenas/backbone/blob/master/test/vendor/jquery.js)
 
 Folder `documentation`
 - In this directory you will find all the documentation of this project.
