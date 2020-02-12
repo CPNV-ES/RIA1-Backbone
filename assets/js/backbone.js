@@ -994,7 +994,11 @@
     get: function(obj) {
       if (obj == null) return void 0;
       return this._byId[obj] ||
+<<<<<<< HEAD
         this._byId[this.modelId(this._isModel(obj) ? obj.attributes : obj, obj.idAttribute)] ||
+=======
+        this._byId[this.modelId(this._isModel(obj) ? obj.attributes : obj)] ||
+>>>>>>> feature/Dev_Menu_Trivago
         obj.cid && this._byId[obj.cid];
     },
 
@@ -1098,8 +1102,13 @@
     },
 
     // Define how to uniquely identify models in the collection.
+<<<<<<< HEAD
     modelId: function(attrs, idAttribute) {
       return attrs[idAttribute || this.model.prototype.idAttribute || 'id'];
+=======
+    modelId: function(attrs) {
+      return attrs[this.model.prototype.idAttribute || 'id'];
+>>>>>>> feature/Dev_Menu_Trivago
     },
 
     // Get an iterator of all models in this collection.
@@ -1154,7 +1163,11 @@
         // Remove references before triggering 'remove' event to prevent an
         // infinite loop. #3693
         delete this._byId[model.cid];
+<<<<<<< HEAD
         var id = this.modelId(model.attributes, model.idAttribute);
+=======
+        var id = this.modelId(model.attributes);
+>>>>>>> feature/Dev_Menu_Trivago
         if (id != null) delete this._byId[id];
 
         if (!options.silent) {
@@ -1177,7 +1190,11 @@
     // Internal method to create a model's ties to a collection.
     _addReference: function(model, options) {
       this._byId[model.cid] = model;
+<<<<<<< HEAD
       var id = this.modelId(model.attributes, model.idAttribute);
+=======
+      var id = this.modelId(model.attributes);
+>>>>>>> feature/Dev_Menu_Trivago
       if (id != null) this._byId[id] = model;
       model.on('all', this._onModelEvent, this);
     },
@@ -1185,7 +1202,11 @@
     // Internal method to sever a model's ties to a collection.
     _removeReference: function(model, options) {
       delete this._byId[model.cid];
+<<<<<<< HEAD
       var id = this.modelId(model.attributes, model.idAttribute);
+=======
+      var id = this.modelId(model.attributes);
+>>>>>>> feature/Dev_Menu_Trivago
       if (id != null) delete this._byId[id];
       if (this === model.collection) delete model.collection;
       model.off('all', this._onModelEvent, this);
@@ -1200,8 +1221,13 @@
         if ((event === 'add' || event === 'remove') && collection !== this) return;
         if (event === 'destroy') this.remove(model, options);
         if (event === 'change') {
+<<<<<<< HEAD
           var prevId = this.modelId(model.previousAttributes(), model.idAttribute);
           var id = this.modelId(model.attributes, model.idAttribute);
+=======
+          var prevId = this.modelId(model.previousAttributes());
+          var id = this.modelId(model.attributes);
+>>>>>>> feature/Dev_Menu_Trivago
           if (prevId !== id) {
             if (prevId != null) delete this._byId[prevId];
             if (id != null) this._byId[id] = model;
