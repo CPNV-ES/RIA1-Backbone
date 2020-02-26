@@ -7,6 +7,7 @@
   - [Informations](#informations)
   - [Installation NGINX](#installation-nginx)
   - [Configuration NGINX](#configuration-nginx)
+  - [Installation GIT](#installation-git)
 
 ## Informations
 - We use NGINX instead of Apache because he is better for static website.
@@ -48,7 +49,7 @@ server {
     listen 80;
     listen [::]:80;
 
-    root /var/www/html;
+    root /var/www/RIA1-Backbone;
     index index.html;
 
     location / {
@@ -57,7 +58,17 @@ server {
 }
 ```
 
-We can now use the folder **/var/www/html** to insert the files we need to use our website.
+## Installation GIT
+
+Use this command to install GIT 
+```
+sudo apt install git
+```
+Now go to the folder **/var/www/** and git clone the project (You will have to connect with your github account)
+```
+cd /var/www/
+sudo git clone https://github.com/CPNV-ES/RIA1-Backbone.git
+```
 
 Sources :
 - https://www.itzgeek.com/how-tos/linux/debian/install-linux-nginx-mysql-php-lemp-stack-debian-9-stretch.html
@@ -65,3 +76,5 @@ Sources :
 - https://www.howtoforge.com/tutorial/how-to-install-nginx-with-php-and-mysql-lemp-on-debian-9/
   
 - https://serverguy.com/comparison/apache-vs-nginx/
+
+- https://linuxize.com/post/how-to-install-git-on-debian-9/
