@@ -1,0 +1,17 @@
+.nav-link:hover{
+    background-color: #ebeced;
+}
+.nav-link{
+    padding: 20px;
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+}
+.navbar{
+    padding:0px;
+    font-size:14px;
+    border-bottom: 1px solid #ebeced;
+}
+.dropdown-menu{
+    right: 0;
+    left:auto;
+}
