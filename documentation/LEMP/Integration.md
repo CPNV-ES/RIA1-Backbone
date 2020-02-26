@@ -11,6 +11,10 @@
 ## Informations
 - We use NGINX instead of Apache because he is better for static website.
 - We are not going to install PHP and MySQL because we don't need them.
+- To connect to the AWS instance, you can use this command on "CMDER".
+  ```
+  ssh -i [Path of your key SSH] [user]@[IP of your virtual machine]
+  ```
 
 ## Installation NGINX
 Before getting started, make sure that all the packages on your server are updated. Run the following command.
