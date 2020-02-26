@@ -1,9 +1,9 @@
 
-# Installation LEMP on instance AWS
+# Installation LEMP and GIT on instance AWS
 
 <h1> Table of Contents</h1>
 
-- [Installation LEMP on instance AWS](#installation-lemp-on-instance-aws)
+- [Installation LEMP and GIT on instance AWS](#installation-lemp-and-git-on-instance-aws)
   - [Informations](#informations)
   - [Installation NGINX](#installation-nginx)
   - [Configuration NGINX](#configuration-nginx)
