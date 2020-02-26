@@ -64,7 +64,7 @@ Use this command to install GIT
 ```
 sudo apt install git
 ```
-Now go to the folder **/var/www/** and git clone the project (You will have to connect with your github account)
+Now go to the folder **/var/www/** and git clone the project (You will need to log in with your github account)
 ```
 cd /var/www/
 sudo git clone https://github.com/CPNV-ES/RIA1-Backbone.git
