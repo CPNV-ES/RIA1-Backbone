@@ -1,0 +1,62 @@
+.nav-link:hover{
+    background-color: #ebeced;
+}
+.nav-link{
+    padding: 20px;
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+}
+.navbar{
+    padding:0px;
+    font-size:14px;
+    border-bottom: 1px solid #ebeced;
+}
+.dropdown-menu{
+    right: 0;
+    left:auto;
+}
+body {
+    font-family: Arial,Helvetica,Sans,Sans-Serif,Sans Serif;
+}
+
+h1{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+button, input, .buttonSearch, .input{
+    height: 44px;
+}
+
+
+.input{    
+    border: 1px solid #9ba2a6;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    text-align: left;
+    background-color: transparent;
+    border-radius: 2px;
+    color: #37454d;
+}
+
+input, button{
+    border: none;
+    text-align: left;
+    background-color: transparent;
+    color: #9BA2A6;
+}
+
+.buttonSearch{
+    font-size: 16px;
+    color: white;
+    background-color: #007fad;
+    border: 1px solid #007fad;
+    border-bottom: 1px solid #005f81;
+    width: 100%;
+    text-align: center;
+}
+
+.textInput{
+    font-size: 12px;
+    white-space: nowrap;
+}
