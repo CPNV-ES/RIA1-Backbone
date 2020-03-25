@@ -1,0 +1,15 @@
+{
+  "language": {
+    "fr": {
+      "login": "Se Connecter",
+      "titre1": "Trouvez votre hôtel idéal et comparez les prix sur différents sites web",
+      "titre2": "Essayez de rechercher une ville, un hôtel particulier, ou même un point de repère !",
+      "checkIn": "Arrivée",
+      "checkOut": "Départ",
+      "room": "Chambre",
+      "money":"CHF",
+      "language": "FR",
+      "search": "Rechercher"
+    }
+  }
+}
