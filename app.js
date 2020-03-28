@@ -62,7 +62,6 @@ var RoomView = Backbone.View.extend({
     var rooms = new RoomsList();
     rooms.fetch({
       success: function (rooms) {
-        
         var variable = { rooms: rooms.models }
         var template = _.template($('#tmpl_room').html())
         that.$el.html(template(variable))
