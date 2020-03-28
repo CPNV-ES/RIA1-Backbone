@@ -18,7 +18,7 @@ $(function () {
       this.render();
     },
     render: function () {
-      this.$el.html(titleTrivago({toto1: title.get('h1titel'), toto2: title.get('h3titel')}));
+      this.$el.html(titleTrivago({ toto1: title.get('h1titel'), toto2: title.get('h3titel') }));
     }
   });
   new insert({
@@ -34,7 +34,7 @@ $(function () {
       this.render();
     },
     render: function () {
-      this.$el.html(titleLogo({lienlogo: logo.get('lien')}));
+      this.$el.html(titleLogo({ lienlogo: logo.get('lien') }));
     }
   });
   new insert({
@@ -43,47 +43,33 @@ $(function () {
 });
 
 // Rooms
-var Room = Backbone.Model.extend(); // model defined
+var Room = Backbone.Model.extend();
 
-var room1 = new Room({
-  // model objects
-  text: "Chambre simple",
-  icon: "&#xf007"
+var RoomsList = Backbone.Collection.extend({
+  model: Room,
+  url: 'rooms.json'
 });
 
-var room2 = new Room({
-  // model objects
-  text: "Chambre double",
-  icon: "&#xf500"
-});
 
-var room3 = new Room({
-  // model objects
-  text: "Chambres familiales",
-  icon: "&#xf0c0"
-});
-
-var RoomCollection = Backbone.Collection.extend({
-  // collection defined
-  model: Room // assigned model
-});
-
-var rooCollection = new RoomCollection([room1, room2, room3]);
 
 var RoomView = Backbone.View.extend({
-  el: "#content",
-  template: _.template($("#tmpl-first").html()),
-  collection: rooCollection,
-  initialize: function() {
-    this.render();
+  el: $('#rooms'),
+  initialize: function () {
+    this.render()
   },
-  render: function() {
-    this.$el.html(
-      this.template({
-        collection: this.collection
-      })
-    );
+  render: function () {
+    var that = this
+    var rooms = new RoomsList();
+    rooms.fetch({
+      success: function (rooms) {
+        
+        var variable = { rooms: rooms.models }
+        var template = _.template($('#tmpl_room').html())
+        that.$el.html(template(variable))
+      }
+    })
+
   }
 });
+new RoomView();
 
-var mview = new RoomView();

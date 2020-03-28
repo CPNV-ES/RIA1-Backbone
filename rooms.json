@@ -1,0 +1,5 @@
+[
+  { "icon": "user", "texte": "One-person room" },
+  { "icon": "user-friends", "texte": "Two-person room"},
+  { "icon": "users", "texte": "Three-person room"}    
+]
