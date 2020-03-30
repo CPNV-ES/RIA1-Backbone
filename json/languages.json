@@ -1,0 +1,26 @@
+{
+    "EN" : {
+        "languages": ["fr", "en","ge","it"],
+        "country": "EN",
+        "default_language": "fr",
+        "default_currency" : "CHF" 
+    },
+    "FR": {
+        "languages": ["fr"],
+        "country": "FR",
+        "default_language": "fr",
+        "default_currency" : "eur" 
+    },
+    "IT": {
+        "languages": ["it"],
+        "country": "IT",
+        "default_language": "it",
+        "default_currency" : "eur" 
+    },
+    "GE": {
+        "languages": ["en","ar"],
+        "country": "GE",
+        "default_language": "ar",
+        "default_currency" : "usd" 
+    }
+}

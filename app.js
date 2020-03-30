@@ -42,15 +42,41 @@ $(function () {
   });
 });
 
+var Language = Backbone.Model.extend();
+
+var LanguagesList = Backbone.Collection.extend({
+  model: Language,
+  url: 'json/languages.json'
+});
+
+var LanguageView = Backbone.View.extend({
+  el: $('#languages'),
+  initialize: function () {
+    this.render()
+  },
+  render: function () {
+    var that = this
+    var languages = new LanguagesList();
+    languages.fetch({
+      success: function (languages) {
+        var variable = { languages: languages.models }
+        var template = _.template($('#tmpl_language').html())
+        that.$el.html(template(variable))
+      }
+    })
+
+  }
+});
+new LanguageView();
+
+
 // Rooms
 var Room = Backbone.Model.extend();
 
 var RoomsList = Backbone.Collection.extend({
   model: Room,
-  url: 'rooms.json'
+  url: 'json/rooms.json'
 });
-
-
 
 var RoomView = Backbone.View.extend({
   el: $('#rooms'),
