@@ -97,60 +97,26 @@
           <div class="title"></div>
         </div>
 
-        <div class="col-4">
+        <div class="col-md-4 col-sm-12 col-xs-12 padding">
           <div class="row input">
-            <span
-              class="col-2 d-flex align-items-center icon-ic searchquery-icon icon-center"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                focusable="false"
-                tabindex="-1"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-              >
-                <g
-                  fill="none"
-                  class="svg-color--primary"
-                  stroke="#37454D"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-miterlimit="10"
-                >
-                  <path d="M21 21l-6-6"></path>
-                  <circle cx="10" cy="10" r="7"></circle>
+            <span class="col-2 d-flex align-items-center icon-ic searchquery-icon icon-center">
+              <svg xmlns="http://www.w3.org/2000/svg" focusable="false" tabindex="-1" width="24" height="24" viewBox="0 0 24 24"><g fill="none" class="svg-color--primary" stroke="#37454D" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10">
+                <path d="M21 21l-6-6"></path>
+                <circle cx="10" cy="10" r="7"></circle>
                 </g>
               </svg>
             </span>
-
-            <input class="col-10" type="search" placeholder="e.g. San Diego" />
+            <input class="col-10" type="search" placeholder="e.g. San Diego">
           </div>
         </div>
 
-        <div class="col-2">
-          <button>
-            <div class="row input">
-              <div class="col-2 d-flex align-items-center">
-                <span class="icon-ic dealform-button__icon"
-                  ><svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    focusable="false"
-                    tabindex="-1"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                  >
-                    <g fill="#37454D">
-                      <path d="M12 12.7V17h1v-6h-.7l-1.8 1.8.7.7z"></path>
-                      <path
-                        d="M19 5h-1c0-.6-.4-1-1-1s-1 .4-1 1H8c0-.6-.4-1-1-1s-1 .4-1 1H5a2 2 0 0 0-2 2v11c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2zm1 13c0 .6-.4 1-1 1H5c-.6 0-1-.4-1-1V9h16v9zm0-10H4V7c0-.6.4-1 1-1h14c.6 0 1 .4 1 1v1z"
-                      ></path>
-                    </g>
-                  </svg>
-                </span>
+        <div class="col-md-2 col-sm-4 col-xs-6 padding">
+          <button class="input">
+            <div class="row">
+              <div class="col-1 d-flex align-items-center nopadding">
+                <span class="icon-ic dealform-button__icon"><svg xmlns="http://www.w3.org/2000/svg" focusable="false" tabindex="-1" width="24" height="24" viewBox="0 0 24 24"><g fill="#37454D"><path d="M12 12.7V17h1v-6h-.7l-1.8 1.8.7.7z"></path><path d="M19 5h-1c0-.6-.4-1-1-1s-1 .4-1 1H8c0-.6-.4-1-1-1s-1 .4-1 1H5a2 2 0 0 0-2 2v11c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2zm1 13c0 .6-.4 1-1 1H5c-.6 0-1-.4-1-1V9h16v9zm0-10H4V7c0-.6.4-1 1-1h14c.6 0 1 .4 1 1v1z"></path></g></svg></span>
               </div>
-              <div class="col-9 d-flex align-items-center">
+              <div class="col-11 d-flex align-items-center nopadding">
                 <div class="container">
                   <div class="row textInput">
                     <div class="col-12" id="checkIn">Check in</div>
@@ -160,12 +126,14 @@
               </div>
             </div>
           </button>
+          
         </div>
-
-        <div class="col-2">
-          <button>
-            <div class="row input">
-              <div class="col-12 d-flex align-items-center">
+        <div class="col-md-2 col-sm-4 col-xs-6 padding">
+          <button class="input">
+            <div class="row">
+              <div class="col-1 nopadding">
+              </div>
+              <div class="col-11 d-flex align-items-center nopadding">
                 <div class="container">
                   <div class="row textInput">
                     <div class="col-12" id="checkOut">Check out</div>
@@ -177,19 +145,19 @@
           </button>
         </div>
 
-        <div class="col-2">
-          <button class="dropdown show">
+        <div class="col-md-2 col-sm-4 col-xs-12 padding">
+          <button class="dropdown show input">
             <div
-              class="row input"
+              class="row"
               id="dropdownMenuLink"
               data-toggle="dropdown"
               aria-haspopup="true"
               aria-expanded="false"
             >
-              <div class="col-2 d-flex align-items-center">
+              <div class="col-1 d-flex align-items-center nopadding">
                 <i class="fas fa-user"></i>
               </div>
-              <div class="col-9 d-flex align-items-center">
+              <div class="col-11 d-flex align-items-center nopadding">
                 <div class="container">
                   <div class="row textInput">
                     <div class="col-12" id='room_title'>Room</div>
@@ -206,11 +174,18 @@
           </button>
         </div>
 
-        <div class="col-2">
-          <button type="button" class="buttonSearch">
-            <b id="search">Search</b>
-          </button>
-        </div>
+        <div class="col-md-2 col-sm-12 d-flex justify-content-center padding">
+                <button type="button" class="buttonSearch ">
+                    <span class="d-flex align-items-center icon-ic searchquery-icon icon-center d-flex justify-content-center">
+                      <svg style="display: none;" class="searchIcon" xmlns="http://www.w3.org/2000/svg" focusable="false" tabindex="-1" width="24" height="24" viewBox="0 0 24 24"><g fill="none" class="svg-color--primary" stroke="#37454D" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10">
+                        <path d="M21 21l-6-6"></path>
+                        <circle cx="10" cy="10" r="7"></circle>
+                        </g>
+                      </svg>
+                    </span>
+                  <b class="searchButton" id="search">Search</b>
+                </button>
+              </div>
       </div>
     </div>
 
@@ -221,10 +196,10 @@
       <% _.each(rooms, function(room){ %>
       <div class="dropdown-item" href="#">
         <div class='row'>
-          <div class="col-2 d-flex align-items-center">
+          <div class="col-1 d-flex align-items-center nopadding">
             <i class="fas fa-<%= room.get('icon') %>"></i>
           </div>
-          <div class="col-9 d-flex align-items-center">
+          <div class="col-11 d-flex align-items-center nopadding">
             <div class="container">
               <div class="row textInput">
                 <div class="col-12">Room</div>

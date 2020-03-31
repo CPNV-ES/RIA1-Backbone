@@ -8,7 +8,7 @@ var title = new titles({
 LogoTrivago = Backbone.Model.extend();
 var logo = new LogoTrivago({
   lien: 'img/logo_trivago.jpg'
-})
+});
 
 //title
 $(function () {
