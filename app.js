@@ -42,6 +42,43 @@ $(function () {
   });
 });
 
+
+//Currency
+var Currency = Backbone.Model.extend();
+
+var CurrenciesList = Backbone.Collection.extend({
+  model: Currency,
+  url: 'json/currencies.json'
+});
+
+var CurrencyView = Backbone.View.extend({
+  el: $('#currencies'),
+  events:{
+    "click  a": "change_currency",
+  },
+  initialize: function () {
+    this.render()
+  },
+  render: function () {
+    var that = this
+    var currencies = new CurrenciesList();
+    currencies.fetch({
+      success: function (currencies) {
+        var variable = { currencies: currencies.models }
+        var template = _.template($('#tmpl_currency').html())
+        that.$el.html(template(variable))
+      }
+    })
+
+  },
+  change_currency: function(e) {
+    $("#money").text(e.target.text);
+  },
+});
+new CurrencyView();
+
+
+//Language
 var Language = Backbone.Model.extend();
 
 var LanguagesList = Backbone.Collection.extend({
@@ -51,6 +88,10 @@ var LanguagesList = Backbone.Collection.extend({
 
 var LanguageView = Backbone.View.extend({
   el: $('#languages'),
+  events:{
+    "click  a": "change_language",
+  },
+  
   initialize: function () {
     this.render()
   },
@@ -64,8 +105,28 @@ var LanguageView = Backbone.View.extend({
         that.$el.html(template(variable))
       }
     })
+  },
+     
+  change_language: function(e) {
+      $("#language").text(e.target.text);
 
-  }
+      $.ajax({url: "json/translations.json", success: function(result){
+        $("#login").html(result["language"][e.target.text]["login"]);
+        $("#titre1").html(result["language"][e.target.text]["titre1"]);
+        $("#titre2").html(result["language"][e.target.text]["titre2"]);
+        $("#checkIn").html(result["language"][e.target.text]["checkIn"]);
+        $("#checkOut").html(result["language"][e.target.text]["checkOut"]);
+        $("#money").html(result["language"][e.target.text]["money"]);
+        $("#language").html(result["language"][e.target.text]["language"]);
+        $("#search").html(result["language"][e.target.text]["search"]);
+        $("#menu1").html(result["language"][e.target.text]["menu1"]);
+        $("#menu2").html(result["language"][e.target.text]["menu2"]);
+        $("#menu3").html(result["language"][e.target.text]["menu3"]);
+        $("#covid19").html(result["language"][e.target.text]["covid19"]);
+        $("#room_desc").html(result["language"][e.target.text]["room_desc"]);
+        $("#room_title").html(result["language"][e.target.text]["room_title"]);
+      }});
+    },
 });
 new LanguageView();
 
@@ -97,4 +158,5 @@ var RoomView = Backbone.View.extend({
   }
 });
 new RoomView();
+
 

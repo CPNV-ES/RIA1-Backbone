@@ -1,26 +1,14 @@
 {
     "EN" : {
-        "languages": ["fr", "en","ge","it"],
-        "country": "EN",
-        "default_language": "fr",
-        "default_currency" : "CHF" 
+        "country": "EN"
     },
     "FR": {
-        "languages": ["fr"],
-        "country": "FR",
-        "default_language": "fr",
-        "default_currency" : "eur" 
+        "country": "FR"
     },
     "IT": {
-        "languages": ["it"],
-        "country": "IT",
-        "default_language": "it",
-        "default_currency" : "eur" 
+        "country": "IT"
     },
     "GE": {
-        "languages": ["en","ar"],
-        "country": "GE",
-        "default_language": "ar",
-        "default_currency" : "usd" 
+        "country": "GE"
     }
 }
