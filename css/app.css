@@ -1,3 +1,8 @@
+@media screen and (max-width: 980px) {
+    .logoTrivago {
+      display:none;
+    }
+  }
 .nav-link:hover{
     background-color: #ebeced;
 }

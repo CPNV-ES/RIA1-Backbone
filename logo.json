@@ -1,0 +1,19 @@
+{
+"ENG": {
+  "id": "ENG",
+  "logotitle": "Trouvez l’hôtel idéal et comparez les prix de différents sites Web",
+  "logodescri": "Essayez de rechercher une ville, un hôtel ou même un lieu connu."
+    
+  },
+"FR": {
+  "id": "FR",
+  "logotitle": "Trouvez l’hôtel idéal et comparez les prix de différents sites Web",
+  "logodescri": "Essayez de rechercher une ville, un hôtel ou même un lieu connu." 
+  },
+"DE": {
+  "id": "DE",
+  "logotitle": "Finde Dein ideales Hotel und vergleiche Preise von verschiedenen Webseiten",
+  "logodescri": "Suche nach einer Stadt, einem Hotel oder sogar nach einer Sehenswürdigkeit!"
+    
+  }
+}
