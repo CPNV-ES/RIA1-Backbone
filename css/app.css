@@ -3,6 +3,33 @@
       display:none;
     }
   }
+  @media screen and (max-width: 980px) and (min-width: 767px) {
+    .searchButton {
+        display: none;
+    }
+    .searchIcon{
+        display: block !important;
+    }
+}
+
+.nopadding {
+    padding: 0px !important;
+    margin: 0px !important;
+ }
+.padding {
+    padding-left:2px;
+    padding-right:2px;
+}
+
+.icon-ic{
+    width: 100%;
+}
+.row{
+    margin:0px;
+}
+button{
+    width:100%;
+}
 .nav-link:hover{
     background-color: #ebeced;
 }
@@ -22,6 +49,7 @@
 }
 body {
     font-family: Arial,Helvetica,Sans,Sans-Serif,Sans Serif;
+    
 }
 
 h1{
