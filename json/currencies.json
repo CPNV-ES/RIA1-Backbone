@@ -1,0 +1,11 @@
+{
+    "CHF":{
+       "text":"CHF - Franc suisse"
+    },
+    "EUR":{
+       "text":"EUR - Euro"
+    },
+    "USD":{
+       "text":"USD - Dollar américain"
+    }
+ }
