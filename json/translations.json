@@ -1,0 +1,68 @@
+{
+  "language": {
+    "FR": {
+      "login": "Se Connecter",
+      "titre1": "Trouvez votre hôtel idéal et comparez les prix sur différents sites web",
+      "titre2": "Essayez de rechercher une ville, un hôtel particulier, ou même un point de repère !",
+      "checkIn": "Arrivée",
+      "checkOut": "Départ",
+      "money":"CHF",
+      "language": "FR",
+      "search": "Rechercher",
+      "covid19": "Avis pour nos voyageurs : la situation liée au coronavirus (COVID-19) peut affecter vos projets de voyage. Soyez prudent. Cliquez ici pour en savoir plus.",
+      "menu1":"Consultés récemment", 
+      "menu2":"Aperçu - Réservations", 
+      "menu3":"Moyens de paiement", 
+      "room_title":"Chambre",
+      "room_desc":"<b>Chambre simple</b>"
+    },
+    "EN": {
+      "login": "Login",
+      "titre1": "Find your ideal hotel and compare prices on different websites",
+      "titre2": "Try to find a city, a mansion, or even a landmark!",
+      "checkIn": "Check in",
+      "checkOut": "Check out",
+      "money":"USD",
+      "language": "EN",
+      "search": "Search",
+      "covid19": "A note to our users: the coronavirus (COVID-19) outbreak may impact your travel plans. Stay safe and find out more here",
+      "menu1":"Recently viewed", 
+      "menu2":"Booking overview", 
+      "menu3":"Payment methods" , 
+      "room_title":"Room",
+      "room_desc":"<b>One-person room</b>"
+    },
+    "GE": {
+      "login": "Einloggen",
+      "titre1": "Finde Dein ideales Hotel und vergleiche Preise von verschiedenen Webseiten",
+      "titre2": "Suche nach einer Stadt, einem Hotel oder sogar nach einer Sehenswürdigkeit!",
+      "checkIn": "Anreise",
+      "checkOut": "Abreise",
+      "money":"EUR",
+      "language": "GE",
+      "search": "Suchen",
+      "covid19": "Hinweis für unsere User: Der Ausbruch des Coronavirus (COVID-19) kann Auswirkungen auf Deine Reisepläne haben. Mehr erfährst Du hier. Pass auf Dich auf!",
+      "menu1":"Zuletzt angesehen", 
+      "menu2":"Buchungsubersicht", 
+      "menu3":"Zahlungsart" , 
+      "room_title":"Zimmer",
+      "room_desc": "<b>Einzelzimmer</b>"
+    },
+    "IT": {
+      "login": "Entra",
+      "titre1": "Trova il tuo hotel ideale e confronta i prezzi di tantissimi siti web",
+      "titre2": "Prova a inserire un nome di città, un hotel o un luogo famoso!",
+      "checkIn": "Arrivo",
+      "checkOut": "Partenza",
+      "money":"EUR",
+      "language": "IT",
+      "search": "Cerca",
+      "covid19": "Comunicazione importante: la diffusione del coronavirus (COVID-19) potrebbe avere ripercussioni sui tuoi programmi di viaggio. Sii prudente e clicca qui per saperne di più.",
+      "menu1":"Strutture viste di recente", 
+      "menu2":"Panoramica prenotazioni", 
+      "menu3":"Metodi di pagamento" , 
+      "room_title":"Camera",
+      "room_desc":"<b>Camera singola</b>"
+    }
+  }
+}
