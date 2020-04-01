@@ -28,7 +28,7 @@ $(function () {
 
 //logo
 $(function () {
-  var titleLogo = _.template("<img src='<%= lienlogo %>'>");
+  var titleLogo = _.template("<img class='w-100' src='<%= lienlogo %>'>");
   var insert = Backbone.View.extend({
     initialize: function () {
       this.render();
