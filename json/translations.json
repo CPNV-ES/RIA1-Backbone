@@ -14,7 +14,9 @@
       "menu2":"Aperçu - Réservations", 
       "menu3":"Moyens de paiement", 
       "room_title":"Chambre",
-      "room_desc":"<b>Chambre simple</b>"
+      "room_desc":"<b>Chambre simple</b>",
+      "room_desc2":"<b>Chambre double</b>",
+      "room_desc3":"<b>Chambre trible</b>"
     },
     "EN": {
       "login": "Login",
@@ -30,7 +32,9 @@
       "menu2":"Booking overview", 
       "menu3":"Payment methods" , 
       "room_title":"Room",
-      "room_desc":"<b>One-person room</b>"
+      "room_desc":"<b>One-person room</b>",
+      "room_desc2":"<b>Two-person room</b>",
+      "room_desc3":"<b>Three-person room</b>"
     },
     "GE": {
       "login": "Einloggen",
@@ -46,7 +50,9 @@
       "menu2":"Buchungsubersicht", 
       "menu3":"Zahlungsart" , 
       "room_title":"Zimmer",
-      "room_desc": "<b>Einzelzimmer</b>"
+      "room_desc": "<b>Einzelzimmer</b>",
+      "room_desc2":"<b>Doppelzimmer</b>",
+      "room_desc3":"<b>Dreibettzimmer</b>"
     },
     "IT": {
       "login": "Entra",
@@ -62,7 +68,9 @@
       "menu2":"Panoramica prenotazioni", 
       "menu3":"Metodi di pagamento" , 
       "room_title":"Camera",
-      "room_desc":"<b>Camera singola</b>"
+      "room_desc":"<b>Camera singola</b>",
+      "room_desc2":"<b>Camera doppia</b>",
+      "room_desc3":"<b>Camera tre</b>"
     }
   }
 }

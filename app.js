@@ -125,6 +125,12 @@ var LanguageView = Backbone.View.extend({
         $("#covid19").html(result["language"][e.target.text]["covid19"]);
         $("#room_desc").html(result["language"][e.target.text]["room_desc"]);
         $("#room_title").html(result["language"][e.target.text]["room_title"]);
+        $("#roomone").html(result["language"][e.target.text]["room_title"]);
+        $("#roomtwo").html(result["language"][e.target.text]["room_title"]);
+        $("#roomthree").html(result["language"][e.target.text]["room_title"]);
+        $("#room1").html(result["language"][e.target.text]["room_desc"]);
+        $("#room2").html(result["language"][e.target.text]["room_desc2"]);
+        $("#room3").html(result["language"][e.target.text]["room_desc3"]);
       }});
     },
 });

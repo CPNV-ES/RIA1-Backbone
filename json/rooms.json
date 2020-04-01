@@ -1,5 +1,5 @@
 [
-  { "icon": "user", "texte": "One-person room" },
-  { "icon": "user-friends", "texte": "Two-person room"},
-  { "icon": "users", "texte": "Three-person room"}    
+  { "icon": "user", "texte": "One-person room" , "slug": "room1", "title": "roomone"},
+  { "icon": "user-friends", "texte": "Two-person room","slug": "room2", "title": "roomtwo"},
+  { "icon": "users", "texte": "Three-person room","slug": "room3", "title": "roomthree"}    
 ]
