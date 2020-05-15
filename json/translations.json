@@ -16,7 +16,10 @@
       "room_title":"Chambre",
       "room_desc":"<b>Chambre simple</b>",
       "room_desc2":"<b>Chambre double</b>",
-      "room_desc3":"<b>Chambre trible</b>"
+      "room_desc3":"<b>Chambre trible</b>",
+      "money_desc": "CHF - Franc suisse",
+      "money_desc2": "EUR - Euro",
+      "money_desc3": "USD - Dollar américain"
     },
     "EN": {
       "login": "Login",
@@ -34,7 +37,10 @@
       "room_title":"Room",
       "room_desc":"<b>One-person room</b>",
       "room_desc2":"<b>Two-person room</b>",
-      "room_desc3":"<b>Three-person room</b>"
+      "room_desc3":"<b>Three-person room</b>",
+      "money_desc": "CHF - Swiss Franc",
+      "money_desc2": "EUR - Euro",
+      "money_desc3": "USD - US Dollars"
     },
     "GE": {
       "login": "Einloggen",
@@ -52,7 +58,10 @@
       "room_title":"Zimmer",
       "room_desc": "<b>Einzelzimmer</b>",
       "room_desc2":"<b>Doppelzimmer</b>",
-      "room_desc3":"<b>Dreibettzimmer</b>"
+      "room_desc3":"<b>Dreibettzimmer</b>",
+      "money_desc": "CHF - Schweizer Franken",
+      "money_desc2": "EUR - Euro",
+      "money_desc3": "USD - US-Dollars"
     },
     "IT": {
       "login": "Entra",
@@ -70,7 +79,10 @@
       "room_title":"Camera",
       "room_desc":"<b>Camera singola</b>",
       "room_desc2":"<b>Camera doppia</b>",
-      "room_desc3":"<b>Camera tre</b>"
+      "room_desc3":"<b>Camera tre</b>",
+      "money_desc": "CHF - Franco Svizzero",
+      "money_desc2": "EUR - Euro",
+      "money_desc3": "USD - Dollari USA"
     }
   }
 }

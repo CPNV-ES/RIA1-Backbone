@@ -1,11 +1,14 @@
 {
     "CHF":{
-       "text":"CHF - Franc suisse"
+       "text":"CHF - Franc suisse",
+       "slug": "money1"
     },
     "EUR":{
-       "text":"EUR - Euro"
+       "text":"EUR - Euro",
+       "slug": "money2"
     },
     "USD":{
-       "text":"USD - Dollar américain"
+       "text":"USD - Dollar américain",
+       "slug": "money3"
     }
  }
