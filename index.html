@@ -220,7 +220,7 @@
 
   <script type="text/template" id="tmpl_currency">
     <% _.each(currencies[0].attributes, function(currency){ %>
-      <a class="dropdown-item" href="#" id="fr"><%= currency.text %></a>
+      <a class="dropdown-item" href="#" id="<%= currency.slug %>"><%= currency.text %></a>
     <% }) %>
   </script>
 

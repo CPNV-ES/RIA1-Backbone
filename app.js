@@ -131,6 +131,9 @@ var LanguageView = Backbone.View.extend({
         $("#room1").html(result["language"][e.target.text]["room_desc"]);
         $("#room2").html(result["language"][e.target.text]["room_desc2"]);
         $("#room3").html(result["language"][e.target.text]["room_desc3"]);
+        $("#money1").html(result["language"][e.target.text]["money_desc"]);
+        $("#money2").html(result["language"][e.target.text]["money_desc2"]);
+        $("#money3").html(result["language"][e.target.text]["money_desc3"]);
       }});
     },
 });
